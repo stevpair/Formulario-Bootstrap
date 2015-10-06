@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+    .has-error .form-control{
+        border: solid 1px #F90;
+    }
+    h1{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Formulario de Registro EPS</h1>
+        </header>
+        <div>
+            <fieldset>
+                <legend><span class="glyphicon glyphicon-list-alt"></span>Datos Personales</legend>
+                <form action="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="form-group col-md-5 col-md-offset-1 has-error">
+                                <label for="txtNombre_1"><span class="glyphicon glyphicon-user"></span>Nombre: </label>
+                                <input type="text" id="txtNombre_1" class="form-control" placeholder="Primer Nombre" required title="Se Necesita Primer Nombre"/>
+                                <label for="txtNombre_2"></label>
+                                <input type="text" id="txtNombre_2" class="form-control" placeholder="Segundo Nombre" required title="Se Necesita Segundo Nombre"/>
+                            </div>
+                            <div class="form-group col-md-5 has-error">
+                                <label for="txtApellido_1"><span class="glyphicon glyphicon-user"></span>Apellido: </label>
+                                <input type="text" id="txtApellido_1" class="form-control" placeholder="Primer Apellido" required title="Se Necesita Primer Apellido"/>
+                                <label for="txtApellido_2"></label>
+                                <input type="text" id="txtApellido_2" class="form-control" placeholder="Segundo Apellido" required title="Se Necesita Segundo Apellido"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5 col-md-offset-1 has-error">
+                                <label for="txtTipoDocumento">Tipo de Documento</label>
+                                <label for="checkbox-inline">
+                                    <input type="radio" name="opciones" value="opcion_1">
+                                    T.I
+                                </label>
+                                <label for="checkbox-inline">
+                                    <input type="radio" name="opciones" value="opcion_1">
+                                    C.C.
+                                </label>
+                                <label for="checkbox-inline">
+                                    <input type="radio" name="opciones" value="opcion_1">
+                                    R.C.
+                                </label>
+                                <label></label>
+                                <input type="text" class="form-control" placeholder="Numero de Documento de Identidad"/>
+                                <label>Lugar de Nacimiento</label>
+                                <input type="text" class="form-control" placeholder="Ciudad de Nacimiento"/>
+                            </div>
+                            <div class="form-group col-md-5 has-error">
+                                <label>Fecha de Expedición</label>
+                                <input type="text" class="form-control" placeholder="Fecha de Expedición Documento"/>
+                                <label>Lugar de Expedición</label>
+                                <input type="text" class="form-control" placeholder="Ciudad de Expedición"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-5 col-md-offset-1 has-error">
+                                <label for="txtCiudad">Ciudad de Residencia</label>
+                                <select class="form-control">
+                                    <option>Ciudad de Residencia</option>
+                                    <option>Cali</option>
+                                    <option>Medellin</option>
+                                    <option>Manizales</option>
+                                    <option>Pereira</option>
+                                    <option>Pasto</option>
+                                    <option>Cartagena</option>
+                                    <option>Barranquilla</option>
+                                    <option>Bogotá</option>
+                                    <option>Leticia</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    <div class="text-left col-md-7">
+                        <button class="btn btn-success">Registrar</button>
+                    </div>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
